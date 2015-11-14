@@ -1,0 +1,15 @@
+{
+    ".url": {
+        "com.synocommunity.packages.couchpotatoserver-ldoe": {
+            "title": "CouchPotato Server LDOE",
+            "desc": "CouchPotato Server LDOE Web UI",
+            "icon": "images/couchpotatoserver-ldoe-{0}.png",
+            "type": "url",
+            "protocol": "http",
+            "port": "5053",
+            "url": "/",
+            "allUsers": true,
+            "grantPrivilege": "local"
+        }
+    }
+}
