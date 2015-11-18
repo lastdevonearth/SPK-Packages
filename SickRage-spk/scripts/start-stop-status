@@ -10,15 +10,15 @@ PYTHON_DIR="/usr/local/python"
 PATH="${INSTALL_DIR}/bin:${INSTALL_DIR}/env/bin:${PYTHON_DIR}/bin:${GIT_DIR}/bin:${PATH}"
 USER="sickrage-ldoe"
 PYTHON="${INSTALL_DIR}/env/bin/python"
-COUCHPOTATOSERVER="${INSTALL_DIR}/var/CouchPotatoServer/SickRage.py"
-CFG_FILE="${INSTALL_DIR}/var/settings.conf"
-PID_FILE="${INSTALL_DIR}/var/sickrage-ldoe.pid"
-LOG_FILE="${INSTALL_DIR}/var/logs/SickRage.log"
+SICKRAGE="${INSTALL_DIR}/var/SickRage/SickBeard.py"
+CFG_FILE="${INSTALL_DIR}/var/config.ini"
+PID_FILE="${INSTALL_DIR}/var/sickrage.pid"
+LOG_FILE="${INSTALL_DIR}/var/Logs/sickrage.log"
 
 
 start_daemon ()
 {
-    su - ${USER} -c "PATH=${PATH} ${PYTHON} ${COUCHPOTATOSERVER} --daemon --pid_file ${PID_FILE} --config_file ${CFG_FILE}"
+    su - ${USER} -c "HOME=${INSTALL_DIR}/var PATH=${PATH} ${PYTHON} ${SICKRAGE} --daemon --pidfile ${PID_FILE} --config ${CFG_FILE} --datadir ${INSTALL_DIR}/var/"
 }
 
 stop_daemon ()

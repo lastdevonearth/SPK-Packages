@@ -1,5 +1,5 @@
 package="sickrage-ldoe"
-version="20151115-1"
+version="20151117-1"
 description="SickRage is an automatic NZB and torrent tvshow downloader."
 description_fre="SickRage permet le téléchargement automatique de séries via NZB ou torrent."
 maintainer="The Last Developper On Earth team"

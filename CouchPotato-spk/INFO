@@ -1,5 +1,5 @@
-package="couchpotatoserver-ldoe"
-version="20151115-1"
+﻿package="couchpotatoserver-ldoe"
+version="20151117-1"
 description="CouchPotato Server is an automatic NZB and torrent movie downloader."
 description_fre="CouchPotato Server permet le téléchargement automatique de films via NZB ou torrent."
 maintainer="The Last Developper On Earth team"
